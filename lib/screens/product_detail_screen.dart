@@ -53,10 +53,56 @@ class ProductDetailScreen extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   width: double.infinity,
-                  child: Text(
-                    loadedProduct.description,
-                    textAlign: TextAlign.center,
-                    softWrap: true,
+                  child: Column(
+                    children: [
+                      Text(
+                        loadedProduct.description,
+                        textAlign: TextAlign.center,
+                        softWrap: true,
+                      ),
+                      SizedBox(height: 20),
+                      Container(
+                        width: double.infinity,
+                        child: Text(
+                          'Description',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                        style: TextStyle(
+                          fontSize: 15,
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      Container(
+                        width: double.infinity,
+                        child: Text(
+                          'Specification',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Container(
+                        width: double.infinity,
+                        child: Text(
+                          "Product Type\t\t\t\t\tDummy\nProduct Type\t\t\t\t\tDummy\nProduct Type\t\t\t\t\tDummy\nProduct Type\t\t\t\t\tDummy",
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(height: 800),
